@@ -8,6 +8,14 @@
     @import url(index.css);
   </style>
   <title>Document</title>
+  <script>
+    window.onload = function(){
+      const form = document.querySelector('#form');
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+      });
+    }
+  </script>
 </head>
 <body>
   <div id="container">
@@ -16,7 +24,7 @@
       <a href="#">Contact</a>
       <a href="#">Feedback</a>
       <a href="#">Donate</a>
-      <form id='form'>
+      <form id="form">
         <input type="text" placeholder="Search...">
         <button>Search</button>
       </form>
